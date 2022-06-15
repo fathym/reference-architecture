@@ -27,7 +27,11 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin({
       patterns: [
-        { from: '**/*[!index.html]', context: 'public/' },
+        {
+          from: '**/*',
+          context: 'public/',
+          globOptions: { ignore: ['**/public/index.html'] },
+        },
       ],
     }),
     new HtmlWebpackPlugin({
