@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/fathym/reference-architecture#readme",
   "devDependencies": {
+    "@types/webpack": "^5.28.0",
     "copy-webpack-plugin": "^11.0.0",
     "html-webpack-plugin": "^5.5.0",
     "rimraf": "^3.0.2",

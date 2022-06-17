@@ -1,11 +1,12 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const PackageJsonDeploy = require('./projects/common/lib/PackageJsonDeploy.js');
 
 module.exports = {
   entry: {
     common: './projects/common/index.ts',
-    state: './projects/state/index.ts',
+    // state: './projects/state/index.ts',
   },
   // devtool: 'inline-source-map',
   module: {
@@ -38,5 +39,8 @@ module.exports = {
       publicPath: './',
       template: 'public/index.html',
     }),
+    new PackageJsonDeploy({
+
+    })
   ],
 };

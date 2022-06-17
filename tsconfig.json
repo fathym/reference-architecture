@@ -9,5 +9,6 @@
     "moduleResolution": "node",
     "sourceMap": false,
     "declaration": true,
+    "resolveJsonModule": true
   }
 }
