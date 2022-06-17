@@ -43,6 +43,8 @@ module.exports = {
       PackageFormat: {
         name: "@fathym/common",
         version: null,
+        main: null,
+        module: null
       },
       PackageJson: packageJson
     })
