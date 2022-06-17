@@ -1,6 +1,6 @@
 var path = require('path');
 var { validate } = require('schema-utils');
-var packageJson = require('../../../package.json');
+var packageJson = require('../../package.json');
 
 class PackageJsonDeploy {
   //#region Constants
@@ -65,7 +65,8 @@ class PackageJsonDeploy {
           formatKeys.forEach((key) => {
             const formatValue = this.options.PackageFormat[key];
 
-            newPackageJson[key] = formatValue != null ? formatValue : packageJson[key];
+            newPackageJson[key] =
+              formatValue != null ? formatValue : packageJson[key];
           });
 
           compilation.emitAsset(

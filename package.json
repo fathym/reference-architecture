@@ -7,7 +7,7 @@
     "dev": "webpack --mode development --config webpack.dev.js",
     "build": "webpack --mode production --config webpack.prd.js",
     "deploy": "npm version patch && npm run deploy:all",
-    "deploy:all": "npm version patch --prefix public && npm run build && npm publish ./build --access public",
+    "deploy:all": "npm run build && npm publish ./build --access public",
     "start": "webpack serve --open --config webpack.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/fathym/reference-architecture#readme",
   "devDependencies": {
+    "@fathym-devkit/package-json-deploy-webpack-plugin": "^1.0.4",
     "@types/webpack": "^5.28.0",
     "copy-webpack-plugin": "^11.0.0",
     "html-webpack-plugin": "^5.5.0",
