@@ -2,10 +2,13 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const PackageJsonDeploy = require('./node_modules/@fathym-devkit/package-json-deploy-webpack-plugin/src/lib/PackageJsonDeploy.js');
-// const PackageJsonDeploy = require('./projects/common/lib/PackageJsonDeploy.js');
+const packageJson = require('./package.json');
 
 module.exports = {
-  entry:'./projects/common/index.ts',
+  entry:{
+    common: './projects/common/index.ts',
+    state: './projects/state/index.ts'
+  },
   // devtool: 'inline-source-map',
   module: {
     rules: [
@@ -38,7 +41,7 @@ module.exports = {
       template: 'public/index.html',
     }),
     new PackageJsonDeploy({
-
+      PackageJson: packageJson
     })
   ],
 };
