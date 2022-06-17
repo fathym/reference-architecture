@@ -6,8 +6,7 @@ const packageJson = require('./package.json');
 
 module.exports = {
   entry:{
-    common: './projects/common/index.ts',
-    state: './projects/state/index.ts'
+    common: './src/index.ts',
   },
   // devtool: 'inline-source-map',
   module: {
@@ -41,6 +40,10 @@ module.exports = {
       template: 'public/index.html',
     }),
     new PackageJsonDeploy({
+      PackageFormat: {
+        name: "@fathym/common",
+        version: null,
+      },
       PackageJson: packageJson
     })
   ],
