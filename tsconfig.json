@@ -3,7 +3,7 @@
     "rootDir": "./",
     "target": "es2018",
     "module": "esnext",
-    "outDir": "./dist",
+    "outDir": "./build",
     "declaration": true,
     "noEmitOnError": true,
     "jsx": "react",

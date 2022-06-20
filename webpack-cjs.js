@@ -6,16 +6,16 @@ module.exports = merge(common, {
     rules: [
       {
         test: /\.tsx?$/,
-        use: 'ts-loader',
+        loader: 'ts-loader',
         exclude: /node_modules/,
         options: {
-            configFile: "./tsconfig.esm.json"
+            configFile: "tsconfig.cjs.json"
         },
       },
     ],
   },
   output: {
-    filename: 'index-esm.js',
+    filename: 'index.cjs.js',
     // filename: '[name].bundle.js',
   },
 });
