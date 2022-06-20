@@ -1,6 +1,6 @@
 {
   "name": "@fathym/reference-architecture",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "The Fathym reference architecture projects provide the foundation for building Fathym's vanilla typescript applications.",
   "main": "./build/index-cjs.js",
   "module": "./build/index-esm.js",
