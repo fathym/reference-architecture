@@ -15,7 +15,7 @@ module.exports = merge(common, {
     ],
   },
   output: {
-    filename: 'index.esm.js',
+    filename: 'index-esm.js',
     // filename: '[name].bundle.js',
   },
 });

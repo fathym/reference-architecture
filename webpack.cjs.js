@@ -15,7 +15,7 @@ module.exports = merge(common, {
     ],
   },
   output: {
-    filename: 'index.cjs.js',
+    filename: 'index-cjs.js',
     // filename: '[name].bundle.js',
   },
 });
