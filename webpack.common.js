@@ -44,7 +44,8 @@ module.exports = {
         name: "@fathym/common",
         version: null,
         main: null,
-        module: null
+        module: null,
+        typings: null
       },
       PackageJson: packageJson
     })
