@@ -1,5 +1,5 @@
 export class Status {
-  public Code: number;
+  public Code?: number;
 
   public get Metadata(): any {
     const meta: any = {};
@@ -15,7 +15,7 @@ export class Status {
     return meta;
   }
 
-  public Message: string;
+  public Message?: string;
 }
 
 export function isStatusSuccess(status: Status): boolean {
