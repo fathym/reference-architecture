@@ -4,7 +4,7 @@
   "description": "The Fathym reference architecture projects provide the foundation for building Fathym's vanilla typescript applications.",
   "main": "./index.cjs.js",
   "module": "./index.esm.js",
-  "typings": "./src/esm/index.d.ts",
+  "typings": "./src/index.d.ts",
   "files": [
     "build/"
   ],
