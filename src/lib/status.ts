@@ -4,7 +4,7 @@ export class Status {
   public get Metadata(): any {
     const meta: any = {};
 
-    const self = this as any;
+    const self: any = this;
 
     for (const prop in self) {
       if (prop !== 'Code' && prop !== 'Message' && prop !== 'Metadata') {
@@ -18,6 +18,6 @@ export class Status {
   public Message: string;
 }
 
-export function isStatusSuccess(status: Status) {
+export function isStatusSuccess(status: Status): boolean {
   return status && status.Code === 0;
 }
