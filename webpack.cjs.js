@@ -9,7 +9,7 @@ module.exports = merge(common, {
         use: 'ts-loader',
         exclude: /node_modules/,
         options: {
-            configFile: "webpack_configs/tsconfig.cjs.json"
+            configFile: "./tsconfig.cjs.json"
         },
       },
     ],
