@@ -33,6 +33,9 @@ module.exports = {
           context: 'public/',
           globOptions: { ignore: ['**/public/index.html'] },
         },
+        {
+          from: 'LICENSE',
+        },
       ],
     }),
     new HtmlWebpackPlugin({
